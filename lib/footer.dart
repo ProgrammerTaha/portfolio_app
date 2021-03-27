@@ -3,9 +3,15 @@ import 'package:portfolio/coolors.dart';
 import 'package:portfolio/header.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-class FooterScreen extends StatelessWidget {
+class FooterScreen extends StatefulWidget {
+  @override
+  _FooterScreenState createState() => _FooterScreenState();
+}
+
+class _FooterScreenState extends State<FooterScreen> {
   var stringWidget =
       "Need Flutter developer\nLet's talk".text.center.white.xl2.make();
+
   var contactWidget = "programmer.taha.1y@gmail.com"
       .text
       .color(Coolors.accentColor)
@@ -16,6 +22,7 @@ class FooterScreen extends StatelessWidget {
       .p16
       .rounded
       .make();
+
   @override
   Widget build(BuildContext context) {
     return VStack(
