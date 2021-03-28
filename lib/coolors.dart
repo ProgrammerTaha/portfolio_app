@@ -8,6 +8,3 @@ mixin Coolors {
   static const Color accentColor = Vx.green400;
 
 }
-
-/* dfcldsh vsdfpvp jpdsvojspvj
- */
