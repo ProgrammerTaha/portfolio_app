@@ -33,7 +33,7 @@ class HeaderScreen extends StatelessWidget {
                   children: [
                     VStack(
                       [
-                      if(context.isMobile) 50.heightBox else 10.heightBox,
+                        if (context.isMobile) 50.heightBox else 10.heightBox,
                         CustomAppBar().shimmer(
                           primaryColor: Coolors.accentColor,
                         ),
@@ -66,7 +66,10 @@ class HeaderScreen extends StatelessWidget {
             ),
           ],
         ),
-      ).size(context.screenWidth, context.percentHeight * 60).color(Coolors.secondaryColor).make(),
+      )
+          .size(context.screenWidth, context.percentHeight * 60)
+          .color(Coolors.secondaryColor)
+          .make(),
     );
   }
 }
@@ -105,10 +108,10 @@ class SocilaAccounts extends StatelessWidget {
       }).make(),
       20.widthBox,
       Icon(
-        AntDesign.instagram,
+        AntDesign.linkedin_square,
         color: Colors.white,
       ).mdClick(() {
-        launch('https://www.instagram.com/programmer_taha');
+        launch('https://www.linkedin.com/in/programmertaha');
       }).make(),
       20.widthBox,
       Icon(
