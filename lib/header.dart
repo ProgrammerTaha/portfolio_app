@@ -149,15 +149,7 @@ class IntroductionWidget extends StatelessWidget {
           onPressed: () {
             launch('https://github.com/flutterdevtaha');
           },
-          child: Row(children: [
-            "Visit my Github ".text.make(),
-            Icon(
-              AntDesign.github,
-              color: Colors.white,
-            ).mdClick(() {
-              launch('https://github.com/flutterdevtaha');
-            }).make(),
-          ]),
+          child: "Visit my GITHUB".text.make(),
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(Coolors.accentColor),
             shape: MaterialStateProperty.all(Vx.roundedSm as OutlinedBorder?),
