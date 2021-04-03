@@ -104,28 +104,21 @@ class SocilaAccounts extends StatelessWidget {
         AntDesign.twitter,
         color: Colors.white,
       ).mdClick(() {
-        launch('https://twitter.com/programmer_taha');
+        launch('https://twitter.com/flutterdevtaha');
       }).make(),
       20.widthBox,
       Icon(
         AntDesign.linkedin_square,
         color: Colors.white,
       ).mdClick(() {
-        launch('https://www.linkedin.com/in/programmertaha');
+        launch('https://www.linkedin.com/in/flutterdevtaha');
       }).make(),
       20.widthBox,
       Icon(
         AntDesign.facebook_square,
         color: Colors.white,
       ).mdClick(() {
-        launch('https://www.facebook.com/programmertaha');
-      }).make(),
-      20.widthBox,
-      Icon(
-        AntDesign.github,
-        color: Colors.white,
-      ).mdClick(() {
-        launch('https://github.com/programmertaha');
+        launch('https://www.facebook.com/flutterdevtaha');
       }).make(),
     ].hStack();
   }
@@ -154,9 +147,17 @@ class IntroductionWidget extends StatelessWidget {
         ].vStack(),
         ElevatedButton(
           onPressed: () {
-            launch('https://programmertaha.github.io/Personal-Website');
+            launch('https://github.com/flutterdevtaha');
           },
-          child: "Visit my porfolio".text.make(),
+          child: Row(children: [
+            "Visit my Github ".text.make(),
+            Icon(
+              AntDesign.github,
+              color: Colors.white,
+            ).mdClick(() {
+              launch('https://github.com/flutterdevtaha');
+            }).make(),
+          ]),
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(Coolors.accentColor),
             shape: MaterialStateProperty.all(Vx.roundedSm as OutlinedBorder?),
